@@ -1,0 +1,21 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "dependencies": {
+        "backend": "file:",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "nodemailer": "^6.6.3"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.0.0",
+        "babel-jest": "^29.0.0",
+        "jest": "^29.0.0",
+        "supertest": "^7.0.0"
+    },
+    "scripts": {
+        "build": "react-scripts build",
+        "start": "node server.js",
+        "test": "jest"
+    }
+}

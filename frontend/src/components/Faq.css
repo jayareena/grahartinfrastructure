@@ -1,0 +1,100 @@
+.faqs-section {
+  padding: 40px;
+  text-align: center;
+  margin: 60px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.faqs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns by default */
+  grid-gap: 20px; /* Space between the rectangles */
+}
+
+/* Style for FAQ items */
+.faq-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #6d9a30;
+}
+
+.faq-question {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #555;
+  transition: max-height 0.3s ease;
+}
+
+/* Active state styles */
+.faq-item.active .faq-answer {
+  display: block;
+  color: white;
+}
+
+.faq-item:not(.active) .faq-answer {
+  display: none;
+}
+
+/* Hover effects */
+.faq-question:hover,
+.faq-answer:hover,
+.faq-question:active,
+.faq-answer:active {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .faqs-container {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.8em; /* Slightly smaller heading on small screens */
+  }
+
+  .faq-question {
+    font-size: 1.3em; /* Smaller font size for questions */
+  }
+
+  .faq-answer {
+    font-size: 1em; /* Smaller font size for answers */
+  }
+
+  .faqs-section {
+    margin: 20px; /* Reduced margin for smaller screens */
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5em; /* Even smaller heading on extra small screens */
+  }
+
+  .faq-question {
+    font-size: 1.2em; /* Smaller question font size */
+  }
+
+  .faq-answer {
+    font-size: 0.9em; /* Smaller answer font size */
+  }
+}

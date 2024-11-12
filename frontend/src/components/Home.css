@@ -1,0 +1,6 @@
+.OurReputation {
+    display: flex;
+    justify-content: space-between; /* Pushes content and image to opposite sides */
+    align-items: center; /* Vertically centers items */
+    padding: 10px;
+  }

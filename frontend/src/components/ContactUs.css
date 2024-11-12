@@ -1,0 +1,107 @@
+.image-container-contactus {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.background-image {
+  width: 100%;
+  height: 350px; 
+  filter: blur(3px);/* This height can be adjusted for smaller screens */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.slogan-overlay-contactus {
+  position: absolute;
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%);
+  color: white; /* Ensure the text color contrasts with the image */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds contrast */
+  text-align: center;
+  z-index: 10; /* Ensure it's on top of the image */
+}
+
+/* Responsive Headings */
+h2 {
+  font-size: 24px; /* Base font size */
+  margin: 0; /* Remove default margin */
+}
+
+h4 {
+  font-size: 18px; /* Base font size */
+  margin: 10px 0; /* Add some margin for spacing */
+}
+
+/* Button Styles */
+.contactus-button {
+  margin-top: 20px; /* Add some space between the image/text and the button */
+  text-align: center;
+}
+
+.btn-contact-us {
+  background-color: #264873; /* Customize the button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px; /* Base button font size */
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact-us:hover {
+  background-color: #1b3b5d; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slogan-overlay-contactus {
+      font-size: 20px; /* Adjust font size for tablets */
+  }
+
+  h2 {
+      font-size: 22px; /* Adjust heading size for tablets */
+  }
+
+  h4 {
+      font-size: 16px; /* Adjust subheading size for tablets */
+  }
+
+  .background-image {
+      height: 300px; /* Adjust height for tablets */
+  }
+
+  .btn-contact-us {
+      font-size: 14px; /* Smaller button font size */
+      padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan-overlay-contactus {
+      font-size: 14px; /* Further adjust font size for mobile */
+  }
+
+  h2 {
+      font-size: 16px; /* Further adjust heading size for mobile */
+  }
+
+  h4 {
+      font-size: 14px; /* Further adjust subheading size for mobile */
+  }
+
+  .background-image {
+      height: 250px; /* Adjust height for mobile */
+  }
+
+  .btn-contact-us {
+      font-size: 12px; /* Smaller button font size */
+      padding: 6px 12px; /* Adjust button padding */
+  }
+}
