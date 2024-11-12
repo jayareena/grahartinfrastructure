@@ -1,0 +1,123 @@
+/* Services.css */
+.services-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.services-container h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #264873;
+}
+
+/* Grid layout for services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; /* Adds space between the cards */
+  justify-items: center;
+  width: 100%;
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+/* Overlay icon styling */
+.icon-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-overlay .fa {
+  font-size: 2rem;
+  margin-bottom: 15px; /* Resizing the icon */
+  color: black; /* Default icon color */
+}
+
+.icon-overlay::before {
+  content: '';
+  position: absolute;
+  left: -10px; /* Offset to the left for the overlay effect */
+  width: 25px;  /* Square width */
+  height: 25px; /* Square height */
+  background-color: #6d9a30; /* Green overlay square */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1; /* Keeps it behind the icon */
+}
+
+/* Line below the icon */
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: black; /* Default line color */
+  margin: 10px auto;
+}
+
+/* Heading styles */
+.service-card h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Hover and active states */
+.service-card:hover,
+.service-card.active {
+  background-color: #003366; /* Dark blue on hover or active */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.service-card.active .icon-overlay .fa,
+.service-card:hover .icon-overlay .fa {
+  color: white; /* Icon turns white on hover or when clicked */
+}
+
+.service-card.active h3,
+.service-card:hover h3 {
+  color: white; /* Heading turns white on hover or when clicked */
+}
+
+.service-card.active .line,
+.service-card:hover .line {
+  background-color: white; /* Line turns white on hover or when clicked */
+}
+
+/* Responsive Design */
+/* For Tablets */
+@media (max-width: 1024px) {
+  .services-grid {
+      grid-template-columns: 1fr 1fr; /* Two columns on tablet view */
+      gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .service-card {
+      width: 100%;
+      height: auto; /* Allow height to adjust dynamically */
+      padding: 20px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .services-grid {
+      grid-template-columns: 1fr; /* Single column on mobile view */
+  }
+
+  .service-card {
+      width: 100%; /* Full width for mobile */
+      height: auto;
+      padding: 20px;
+  }
+}
