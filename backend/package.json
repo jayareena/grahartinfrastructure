@@ -1,4 +1,5 @@
 {
+    "homepage": "https:// jayareena.github.io/grahartinfrastructure",
     "name": "backend",
     "version": "1.0.0",
     "dependencies": {
@@ -16,6 +17,8 @@
     "scripts": {
         "build": "react-scripts build",
         "start": "node server.js",
-        "test": "jest"
+        "test": "jest",
+        "deploy": "gh-pages -d build",
+        "predeploy": "npm run build"
     }
 }
