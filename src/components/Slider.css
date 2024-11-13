@@ -1,0 +1,158 @@
+/* Slider container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Default height for desktop */
+  overflow: hidden;
+}
+
+.slider-image-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.black-blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker black overlay */
+  z-index: 1;
+}
+
+.slogan {
+  position: absolute;
+  top: 35%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Hr grotesk';
+  font-size: 1.2rem; /* Default text size for desktop */
+  z-index: 2;
+  text-align: left;
+  font-weight: bold;
+}
+
+.slogan1 {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem; /* Default text size for desktop */
+  z-index: 2;
+  font-family: 'Hr grotesk'; 
+  text-align: left;
+  font-weight: bold;
+  max-width: 700px;
+}
+
+.right-image-container {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  z-index: 3;
+}
+
+.right-image {
+  max-width: 700px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.know-more-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  z-index: 4;
+}
+
+.know-more-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+  .slider-container {
+    height: 400px; /* Adjust height for tablets */
+  }
+
+  .slogan {
+    font-size: 1rem; /* Adjust text size for tablets */
+    top: 30%;
+    left:60%;
+  }
+
+  .slogan1 {
+    font-size: 1.3rem; /* Adjust text size for tablets */
+    top: 60%;
+    left: 65%;
+    max-width: 90%; /* Reduce max-width for tablets */
+  }
+
+  .right-image {
+    max-width: 500px;
+    height: 400px;
+  }
+
+  .know-more-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    bottom: 5%;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .slider-container {
+    height: 300px; 
+  }
+
+  .slogan {
+    font-size: 10px; /* Adjust text size for mobile */
+    top: 27%;
+    left: 60%;
+  }
+
+  .slogan1 {
+    font-size: 0.8rem; /* Adjust text size for mobile */
+    top: 55%;
+    left: 70%;
+    max-width: 500px; /* Reduce max-width for mobile */
+  }
+  .right-image-container {
+    position: absolute;
+    top: 20%;
+    left: -12%;
+    z-index: 3;
+  }
+
+  .right-image {
+    max-width: 300px;
+    height: 250px;
+    
+  }
+
+  .know-more-button {
+    font-size: 0.6rem;
+    padding: 6px 12px;
+    bottom: 5%;
+    right: 10%;
+  }
+}

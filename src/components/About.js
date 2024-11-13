@@ -1,0 +1,132 @@
+import React from 'react';
+import './About.css';
+import aboutImage1 from '../images/about.png';
+import visionImage from '../images/Ourvision.jpg'; // Image for 'Our Vision'
+import missionImage from '../images/Ourmission.jpg'; // Image for 'Our Mission'
+import coreImage from '../images/Corevalue.jpg';
+import ContactUs from './ContactUs'; // Image for 'Core Values'
+import Footer from './Footer';
+
+// Define core values with their descriptions and images
+const coreValues = [
+  {
+    title: 'Safety',
+    description: 'Safety comes first. We provide a secure environment for everyone involved.',
+    image: '../images/Safety.png', // Update with the actual image path
+  },
+  {
+    title: 'Quality',
+    description: 'We deliver projects that stand the test of time and meet the highest standards.',
+    image: '../images/Quality.png', // Update with the actual image path
+  },
+  {
+    title: 'Integrity',
+    description: 'We operate with honesty and transparency in every project.',
+    image: '../images/Integrity.png', // Update with the actual image path
+  },
+  {
+    title: 'Innovation',
+    description: 'We embrace cutting-edge technology to ensure efficiency in our projects.',
+    image: '../images/Innovation.png', // Update with the actual image path
+  },
+  {
+    title: 'Collaboration',
+    description: 'Strong communication and teamwork are essential to our success.',
+    image: '../images/Collaboration.png', // Update with the actual image path
+  },
+  {
+    title: 'Sustainability',
+    description: 'We implement eco-friendly practices to minimize environmental impact.',
+    image: '../images/Sustainability.png', // Update with the actual image path
+  },
+];
+
+const About = () => {
+  return (
+    <div>
+      {/* Slider Section */}
+      <div className="aboutours-container">
+        <div className="aboutoursimage-container">
+          <img src={aboutImage1} alt="Slider" className="slider-image" />
+          <div className="overlayabout-text-container">
+            <h1 className="overlayabout-text">About Us</h1>
+          </div>
+        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="about-header">
+        <h1>Grahart Infrastructure Private Limited</h1>
+      </div>
+
+      <div className="about-content1">
+        <div className="about-text">
+          <p>Grahart Infrastructure Private Limited specializes in the construction of homes and telecommunication infrastructure, offering comprehensive solutions tailored to meet the needs of both residential and telecom projects. We are committed to delivering high-quality construction services, combining our expertise in building homes with innovative telecom infrastructure development. Our approach is rooted in active engagement and clear communication with clients to ensure that every project is executed seamlessly, from planning to completion. By employing cutting-edge technology and a problem-solving mindset, we not only build structures but also long-lasting client partnerships, ensuring the delivery of reliable and future-ready solutions for homes and telecommunication networks.</p>
+        </div>
+      </div>
+
+{/* Our Core Values Section */}
+<div className="corevalue-content">
+<div className="corevalue-text">
+  <h2>Our Core Values</h2>
+  <p>
+    At Grahart Infrastructure, we believe that our success is rooted in our core principles.
+    These values guide our actions and decision-making processes, ensuring we deliver exceptional
+    results in every project.
+  </p>
+  </div>
+  
+  {/* Core Value Image on the same row */}
+ <center> <div className="corevalue-image">
+    <img src={coreImage} alt="Core Values" />
+  </div></center>
+
+  {/* Core Values Grid on the next line */}
+  <div className="core-values-grid">
+    {coreValues.map((value, index) => (
+      <div className="core-value" key={index}>
+        <img src={value.image} alt={value.title} />
+        <h3>{value.title}</h3>
+        <p>{value.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+      {/* Our Vision Section */}
+      <div className="vision-content">
+        <div className="vision-text">
+          <h2>Our Vision</h2>
+          <p>To be the leading construction and infrastructure company, recognized for transforming ideas into sustainable realities.</p>
+        </div>
+        <div className="vision-image">
+          <img src={visionImage} alt="Our Vision" />
+        </div>
+      </div>
+
+      {/* Our Mission Section */}
+      <div className="mission-content">
+        <div className="mission-text">
+          <h2>Our Mission</h2>
+          <p>Our mission is to provide exceptional construction services, delivering projects with excellence, on time, and within budget.</p>
+        </div>
+        <div className="mission-image">
+          <img src={missionImage} alt="Our Mission" />
+        </div>
+      </div>
+      <div className="director-container">
+      <h2 className="director-heading">Our Director's Leadership</h2>
+
+      <div className="card">
+        <p className="director-description">
+           Binil Babu is our visionary leader of Grahart Infrastructure Pvt Ltd, serving as Director, Founder, and CEO. With a passion for innovation and a commitment to excellence, Binil Babu has steered the company towards remarkable growth and success, shaping the future of infrastructure development. Under their leadership, the company focuses on delivering quality projects with cutting-edge technology and sustainable solutions.
+        </p>
+      </div>
+    </div>
+      <ContactUs/>
+      <Footer/>
+    </div>
+  );
+};
+
+export default About;

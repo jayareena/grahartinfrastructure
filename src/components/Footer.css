@@ -1,0 +1,95 @@
+.footer-container {
+  background-color: #264873;
+  color: white;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: space-around;
+  gap: 20px; /* Equal spacing between sections */
+  padding: 20px;
+  max-width: 1200px; /* Increase the width for larger screens */
+  margin: 0 auto;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: white; 
+  text-decoration: none; /* Ensure no underline by default */
+}
+
+.footer-section p a,
+.footer-section p a:visited {
+  color: white; /* Ensures both unvisited and visited links are white */
+  text-decoration: none; /* Removes underline for normal state */
+}
+
+.footer-section p a:hover,
+.footer-section p a:focus,
+.footer-section p a:active {
+  text-decoration: underline; /* Underline on hover, focus, or active state */
+  color: white; /* Ensure the color remains white on hover and active */
+}
+
+
+.footer-section {
+  flex: 1;
+  min-width: 200px; /* Ensures sections don’t shrink too much on smaller screens */
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline; /* Underline social icons on hover */
+}
+
+.footer-bottom {
+  background-color: #ffffff;
+  padding: 10px 0;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Make the footer responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+/* Link styles for email, phone, address, and WhatsApp */
+.email-link, .phone-link, .whatsapp-link, .address-link {
+  color: inherit; /* Use the current text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.email-link:hover, .phone-link:hover, .whatsapp-link:hover, .address-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  cursor: pointer; /* Show pointer on hover */
+}

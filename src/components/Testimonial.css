@@ -1,0 +1,141 @@
+.testimonials {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .testimonials-title {
+    font-size: 2em;
+    color: #070707; /* Dark green color */
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .testimonial {
+    background: #264873;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+    text-align: center;
+  }
+  
+  .testimonial-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2em;
+    color:white;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-author {
+    font-size: 1.6em;
+    color:white;
+    font-weight:bold;/* Dark green color for the author */
+    margin: 0;
+  }
+  
+  .testimonial-role {
+    font-size: 1em;
+    color:white;/* Gray color for the role */
+    margin: 0;
+    font-weight: bold; /* Add this line to make the text bold */
+  }
+  
+  
+  .carousel-control {
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+    background-color: #6d9a30;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%; /* Round shape */
+    font-size: 1.5em;
+    z-index: 10;
+    width: 50px; /* Size of the button */
+    height: 50px; /* Size of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  /* Responsive Styling */
+@media (max-width: 768px) {
+  .testimonials-title {
+    font-size: 1.75rem;
+  }
+
+  .testimonial {
+    padding: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .carousel-control {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-title {
+    font-size: 1.5rem;
+  }
+
+  .testimonial {
+    padding: 0.75rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.85rem;
+  }
+
+  .testimonial-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .carousel-control {
+    font-size: 1.25rem;
+  }
+}

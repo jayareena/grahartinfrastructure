@@ -1,0 +1,478 @@
+/* Slider Section */
+
+.servicess-container {
+  position: relative;
+  width: 100%;}
+
+.servicessimage-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Default height */
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.servicessoverlay-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.servicessoverlay-text {
+  color: #264873;
+  font-size: 4rem; /* Larger font size for desktop */
+  font-weight: bold;
+}
+
+/* Introduction Section */
+.introduction-section {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+
+.intro-content {
+  width: 100%;
+}
+
+.intro-btn {
+  background-color: #6d9a30;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-content-section img {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+/* Services Section */
+.servicess-section {
+  text-align: center;
+  padding: 30px;
+  margin: 50px;
+  background-color: #f7f7f7;
+}
+
+.servicess-card {
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Image on top, content below */
+  align-items: center;
+  gap: 10px;
+}
+
+.servicess-card img {
+  width: 300px;
+  height: 300px;
+}
+
+.servicess-card-content {
+  text-align: center;
+}
+
+.servicess-card-content h3 {
+  color: #264873;
+}
+
+/* Services Section Horizontal */
+.servicess-cards-horizontal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; /* Adds space between the cards */
+  justify-items: center;
+  width: 100%;
+  margin: 50px auto; /* Center horizontally on larger screens */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .servicessimage-container {
+    height: 400px; /* Adjust height for tablets */
+  }
+
+  .servicessoverlay-text {
+    font-size: 3rem; /* Slightly smaller text on medium screens */
+  }
+
+  .introduction-section {
+    flex-direction: column; /* Stack elements vertically */
+    margin: 20px; /* Reduced margin */
+  }
+
+  .intro-image, .intro-content {
+    width: 100%; /* Full width for small screens */
+    margin: 0; /* Reset margin */
+  }
+
+  .servicess-cards-horizontal {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Center horizontally */
+  }
+
+  .servicess-card {
+    width: 100%; /* Full width for cards on small screens */
+    max-width: 400px; /* Optional max width */
+  }
+
+  .image-centered {
+    width: 100%; /* Make centered image responsive */
+  }
+
+  .side-image {
+    float: none; /* Reset float */
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0; /* Margin adjustments */
+  }
+
+  .image-content-section img {
+    width: 100%; /* Responsive images in the section */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .servicess-cards-horizontal {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Slider Section */
+  .servicessimage-container {
+    height: 300px; /* Reduce height for smaller screens */
+  }
+
+  .servicessoverlay-text {
+    font-size: 2rem; /* Smaller font size for overlay text */
+    text-align: center;
+    left: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 100%;
+  }
+
+  /* Introduction Section */
+  .introduction-section {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .intro-image, .intro-content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .intro-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Services Section */
+  .servicess-cards-horizontal {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .servicess-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Image Content Section */
+  .image-centered,
+  .side-image {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .image-content-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .why-cards {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .why-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smaller Devices (Mobile) */
+  .servicessoverlay-text {
+    font-size: 1.5rem; /* Even smaller font size for overlay text */
+  }
+
+  /* Introduction Section */
+  h2, h3 {
+    font-size: 1.5rem; /* Adjust heading sizes */
+  }
+
+  .intro-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* Services Cards */
+  .why-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .why-card p {
+    font-size: 0.8rem;
+  }
+
+  /* General Text Adjustments */
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* FAQs Section */
+  .faq {
+    padding: 0 20px;
+  }
+
+  /* Overlay Text */
+  .servicessoverlay-text-container {
+    padding: 10px;
+  }
+}
+
+/* General Styles */
+h2, h3 {
+  margin: 10px 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.servicess-image-grid {
+  margin: 50px;
+}
+
+.servicess-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to wrap into multiple rows on smaller screens */
+}
+
+.servicess-hover-container {
+  position: relative;
+  width: 23%; /* Adjust this to set how many items in a row on desktop */
+  margin-bottom: 20px; /* Space between rows */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.servicess-hover-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.servicess-slogans-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #264873;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.servicess-slogans-overlay p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.servicess-hover-container:hover img {
+  transform: scale(1.1);
+}
+
+.servicess-hover-container:hover .servicess-slogans-overlay {
+  opacity: 1;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .servicess-hover-container {
+    width: 48%; /* 2 items per row on tablets */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .servicess-hover-container {
+    width: 100%; /* 1 item per row on mobile */
+  }
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #f0f3f5;
+  padding: 40px 10px; /* Adjust padding for small screens */
+  text-align: center;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px; /* Add space between the cards */
+  margin: 50px auto;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.why-card {
+  width: 200px; /* Default width for large screens */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.why-card i {
+  font-size: 2rem;
+  color: #6d9a30;
+}
+.why-card h3 {
+  font-size: 1.2rem;
+}
+
+.why-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .why-card {
+    width: 200px; 
+    margin-bottom: 20px; /* Margin between cards */
+  }
+}
+/* Wrapper for both Image and Content */
+.image-content-wrapper {
+  margin: 50px;
+}
+
+/* Content and Image Layout */
+.content-with-image {
+  display: flex; /* Use flexbox to layout image and content side by side */
+  flex-wrap: wrap; /* Allow content to wrap around image */
+}
+
+/* Image Styles */
+.image-left {
+  float: left; /* Float the image to the left */
+  margin-right: 20px; /* Space between image and content on the right */
+  margin-bottom: 20px; /* Space between the image and content below */
+  width: 300px; /* Image width */
+  height: auto; /* Maintain aspect ratio */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+/* Content Styles */
+.content-below {
+  flex-grow: 1; /* Allow the content to take up remaining space */
+}
+
+/* Content Above the image */
+.content-above {
+  margin-bottom: 20px; /* Space between the top content and image */
+}
+
+/* Content Heading and Paragraphs */
+.content-above h2, .content-above h3 {
+  margin-bottom: 10px;
+}
+
+.content-above p {
+  margin-bottom: 15px;
+}
+
+.content-below h3 {
+  margin-bottom: 10px;
+}
+
+.content-below p {
+  margin-bottom: 15px;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  .image-left {
+    width: 50%; /* Image takes 50% width on tablets */
+    margin-right: 15px; /* Adjust right margin */
+  }
+
+  .content-with-image {
+    flex-direction: column; /* Stack content vertically on tablets */
+  }
+
+  .content-above, .content-below {
+    width: 100%; /* Content takes full width */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  .image-left {
+    width: 100%; /* Image takes full width on mobile */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Space below the image */
+  }
+
+  .content-with-image {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .content-above, .content-below {
+    width: 100%; /* Content takes full width */
+  }
+}
+

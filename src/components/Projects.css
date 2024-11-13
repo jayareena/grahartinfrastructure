@@ -1,0 +1,136 @@
+.projects-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.projects-heading {
+    font-size: 32px;
+    color: #264873;
+    margin-bottom: 40px;
+}
+
+/* Add the transition to the projects grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* When switching pages, the container moves smoothly */
+.transition-slide {
+    transform: translateX(10px); /* Default: no movement */
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-info {
+    padding: 20px;
+    background-color: #264873;
+    color: white;
+}
+
+.project-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 14px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.carousel-btn {
+    background-color: #264873;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #264873;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-heading {
+        font-size: 28px; /* Adjust heading size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+
+    .project-info h3 {
+        font-size: 16px; /* Adjust project title size */
+    }
+
+    .project-info p {
+        font-size: 16px; /* Adjust project description size */
+    }
+
+    .carousel-controls {
+        flex-direction: column; /* Stack controls vertically */
+        align-items: center; /* Center controls */
+        width: auto; /* Allow width to adjust */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-heading {
+        font-size: 24px; /* Further adjust heading size */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .project-image img {
+        height: 150px; /* Adjust image height */
+    }
+
+    .carousel-controls {
+        width: 100%; /* Full width for mobile */
+        margin: 10px 0; /* Adjust margin */
+    }
+}

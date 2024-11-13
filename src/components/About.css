@@ -1,0 +1,554 @@
+/* Desktop Styles (Min Width: 769px) */
+@media (min-width: 769px) {
+  /* About Section */
+  .aboutours-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing */
+  }
+
+  /* About Image Container */
+  .aboutoursimage-container {
+    width: 100%; /* Adjust for larger screens */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    image-rendering: crisp-edges;
+  }
+
+  /* Overlay Text */
+  .overlayabout-text {
+    color: #264873;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 70%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 3rem; /* Adjust size for desktop */
+    z-index: 2;
+    font-family: 'Hr grotesk';
+    text-align: center; /* Center text */
+    font-weight: bold;
+    max-width: 700px;
+  }
+
+  /* About Header */
+  .about-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem; /* Larger font for desktop */
+    margin: 40px;
+    color: #264873;
+  }
+
+  /* About Content */
+  .about-content1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Space out content */
+    margin: 0 50px; /* Adjust margins */
+    margin-bottom: 60px;
+  }
+
+  .about-text {
+    flex: 2;
+    background-color: #264873;
+    padding: 20px; /* Add padding */
+  }
+
+  .about-text p {
+    font-size: 18px; /* Font size for desktop */
+    line-height: 1.6;
+    color: white;
+    margin: 20px;
+  }
+
+  .about-image1 {
+    flex: 1;
+    width: 400px; /* Fixed width for larger screens */
+    height: auto;
+  }
+
+  .about-image1 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Vision Section */
+  .vision-content {
+    display: flex;
+    justify-content: space-between; /* Space out content */
+    align-items: center;
+  }
+
+  .vision-text {
+    margin-left: 200px;
+  }
+
+  .vision-image img {
+    width: 300px; /* Fixed width for vision image */
+    height: auto;
+    margin-right: 200px;
+  }
+
+  /* Mission Section */
+  .mission-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; /* Space out content */
+    
+
+  }
+
+  .mission-text {
+    margin-right: 200px;
+  }
+
+  .mission-image img {
+    width: 300px; /* Fixed width for mission image */
+    height: auto;
+    margin-left: 200px;
+  }
+  .corevalue-content {
+    
+    text-align: left;
+    margin: 0px 100px;
+  }
+  .corevalue-image img {
+    width: 300px; /* Fixed width for mission image */
+    height: auto;
+  }
+  
+
+  /* Core Values Section */
+  .core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+    gap: 20px; /* Gap between cards */
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+/* Director Section */
+.director-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  color: #264873;
+}
+
+.director-description {
+  color: white;
+}
+
+.card {
+  background-color: #264873;
+  padding: 20px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Adding background spots using pseudo-elements */
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #264873;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.card::before {
+  top: -40px;
+  left: -40px;
+  background-color: #6d9a30;
+}
+
+.card::after {
+  bottom: -40px;
+  right: -40px;
+  background-color: #6d9a30;
+}
+
+.card:hover::before,
+.card:hover::after {
+  transform: scale(1.1);
+}
+
+/* Tablet Styles (Max Width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* About Section */
+  .aboutours-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+
+  /* About Image Container */
+  .aboutoursimage-container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    image-rendering: crisp-edges;
+  }
+
+  /* Overlay Text */
+  .overlayabout-text {
+    color: #264873;
+    position: absolute;
+    top: 50%; /* Adjust position for tablet */
+    left: 50%; /* Centering */
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem; /* Adjust size for tablet */
+    z-index: 2;
+    font-family: 'Hr grotesk';
+    text-align: left;
+    font-weight: bold;
+    max-width: 700px;
+  }
+
+  /* About Header */
+  .about-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem; /* Adjust size for tablet */
+    margin: 40px;
+    color: #264873;
+  }
+
+  /* About Content */
+  .about-content1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0px 50px; /* Adjust margins for tablet */
+    margin-bottom: 60px;
+  }
+
+  .about-text {
+    flex: 2;
+    background-color: #264873;
+  }
+
+  .about-text p {
+    font-size: 16px; /* Slightly larger text for tablet */
+    line-height: 1.6;
+    color: white;
+    margin: 30px; /* Adjust margins */
+  }
+
+  .about-image1 {
+    flex: 1;
+    position: relative; /* Adjust for tablet */
+    width: 400px; /* Fixed width for tablet */
+    height: auto;
+  }
+
+  .about-image1 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Vision Section */
+  .vision-content {
+    flex-direction: row; /* Maintain row layout */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .vision-text {
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .vision-image {
+    margin-right: 20px; /* Adjust margin */
+  }
+
+  .vision-image img {
+    width: 300px; /* Fixed width for tablet */
+    height: auto;
+  }
+
+  /* Mission Section */
+  .mission-content {
+    flex-direction: row; /* Maintain row layout */
+  }
+
+  .mission-text {
+    margin-right: 20px; /* Adjust margin */
+  }
+
+  .mission-image {
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .mission-image img {
+    width: 300px; /* Fixed width for tablet */
+    height: auto;
+  }
+
+  /* Core Values Section */
+  .core-values-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+/* Tablet Styles (Max Width: 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* About Section */
+  .aboutours-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+
+  /* About Image Container */
+  .aboutoursimage-container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+    image-rendering: crisp-edges;
+  }
+
+  /* Overlay Text */
+  .overlayabout-text {
+    color: #264873;
+    position: absolute;
+    top: 50%; /* Adjust position for tablet */
+    left: 50%; /* Centering */
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem; /* Adjust size for tablet */
+    z-index: 2;
+    font-family: 'Hr grotesk';
+    text-align: left;
+    font-weight: bold;
+    max-width: 700px;
+  }
+
+  /* About Header */
+  .about-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem; /* Adjust size for tablet */
+    margin: 40px;
+    color: #264873;
+  }
+
+  /* About Content */
+  .about-content1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 0px 50px; /* Adjust margins for tablet */
+    margin-bottom: 60px;
+  }
+
+  .about-text {
+    flex: 2;
+    background-color: #264873;
+  }
+
+  .about-text p {
+    font-size: 16px; /* Slightly larger text for tablet */
+    line-height: 1.6;
+    color: white;
+    margin: 30px; /* Adjust margins */
+  }
+
+  .about-image1 {
+    flex: 1;
+    position: absolute;
+    bottom: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust width for tablet */
+    height: auto;
+  }
+
+  .about-image1 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Vision Section */
+  .vision-content {
+    flex-direction: row; /* Maintain row layout */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .vision-text {
+    margin-left: 20px; /* Adjust margin */
+  }
+
+  .vision-image {
+    margin-right: 20px;
+  }
+}
+/* Mobile Styles (Max Width: 480px) */
+@media (max-width: 480px) {
+  /* About Section */
+  .aboutours-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+  }
+
+  /* About Image Container */
+  .aboutoursimage-container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  /* Overlay Text */
+  .overlayabout-text {
+    color: #264873;
+    position: absolute;
+    top: 20%; /* Adjust position for mobile */
+    left: 70%; /* Centering */
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    z-index: 2;
+    font-family: 'Hr grotesk';
+    text-align: center; /* Center text */
+    font-weight: bold;
+    max-width: 90%; /* Limit the width on mobile */
+  }
+
+  /* About Header */
+  .about-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; /* Reduced margin for mobile */
+  }
+
+  .about-header h1 {
+    font-size: 1rem; /* Smaller font size for mobile */
+    margin: 20px; /* Adjust margin */
+    color: #264873;
+  }
+
+  /* About Content */
+  .about-content1 {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+    margin: 0 20px; /* Adjust margins for mobile */
+    margin-bottom: 30px; /* Reduced bottom margin */
+  }
+
+  .about-text {
+    background-color: #264873;
+    padding: 10px; /* Reduced padding */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .about-text p {
+    font-size: 14px; /* Smaller font size for mobile */
+    line-height: 1.4; /* Adjust line height */
+    color: white;
+    margin: 10px; /* Adjust margins */
+  }
+
+  .about-image1 {
+    width: 100%; /* Full width for mobile */
+    height: auto;
+    margin-top: 20px; /* Spacing between text and image */
+  }
+
+  .about-image1 img {
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Vision Section */
+  .vision-content {
+    flex-direction: column; /* Stack vision content vertically */
+    align-items: center; /* Center items */
+  }
+
+  .vision-text {
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .vision-image img {
+    width: 80%; /* Adjust width for mobile */
+    height: auto;
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  /* Mission Section */
+  .mission-content {
+    flex-direction: column; /* Stack mission content vertically */
+    align-items: center; /* Center items */
+  }
+
+  .mission-text {
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .mission-image img {
+    width: 80%; /* Adjust width for mobile */
+    height: auto;
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  /* Core Values Section */
+  .core-values-grid {
+    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 10px; /* Reduced padding */
+  }
+}

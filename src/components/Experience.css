@@ -1,0 +1,172 @@
+/* Main container for experience section */
+.experience-section {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 50px 150px; /* Adjusted margin */
+  overflow: hidden; /* Prevent overflow outside container */
+}
+
+/* Container for all stat items */
+.stat-section1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 47%;
+}
+
+.stat-section2 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  gap: 20px;
+}
+
+.stat-section3 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 49%;
+  left: 20%;
+}
+
+.stat-section4 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 71%;
+}
+
+/* For each stat item (icon on the right or left) */
+.stat-item {
+  display: flex;
+  flex-direction: row-reverse; /* Default: Icon on the right */
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat icon styling */
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+/* Stat text */
+.stat-text h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin: 0;
+}
+
+.stat-text p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 5px 0 0;
+}
+
+/* Text section layout */
+.text-section {
+  max-width: 350px;
+  text-align: left;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  color: #264873;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  background-color: #6d9a30;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-button:hover {
+  background-color: #264873;
+}
+
+/* Responsive design adjustments */
+/* Mobile */
+@media (max-width: 768px) {
+  .experience-section {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+    gap: 40px; /* Spacing between sections */
+    margin:10px;
+  }
+
+  .stat-section1,
+  .stat-section2,
+  .stat-section3,
+  .stat-section4 {
+    position: static; /* Remove absolute positioning */
+    flex-direction: column; /* Stack stat items vertically */
+    align-items: center; /* Center items */
+    gap: 20px; /* Space between items */
+    margin:65px;
+  }
+
+  .stat-item {
+    flex-direction: column; /* Icon above text */
+    text-align: center; /* Center text */
+  }
+
+  .stat-icon {
+    align-items: center;
+    margin-bottom: 10px; /* Space below icon */
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .experience-section {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+  }
+
+  .stat-section1,
+  .stat-section2,
+  .stat-section3,
+  .stat-section4 {
+    position: static; /* Remove absolute positioning */
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-around; /* Space out items */
+  }
+
+  .stat-item {
+    flex-direction: row; /* Keep icon on the right */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .stat-section1,
+  .stat-section2,
+  .stat-section3,
+  .stat-section4 {
+    position: absolute; /* Maintain original positioning */
+  }
+
+  .stat-item {
+    flex-direction: row-reverse; /* Icon on the right */
+  }
+}
