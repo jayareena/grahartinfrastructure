@@ -1,9 +1,5 @@
 {
-  "homepage": "https://jayareena.github.io/grahartinfrastructure",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jayareena/grahartinfrastructure.git"
-  },
+  "homepage": "https://jayareena.github.io/grahart",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
