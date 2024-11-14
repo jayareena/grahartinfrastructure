@@ -1,4 +1,4 @@
-// Projects.test.js
+// projects.test.js
 
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -25,6 +25,16 @@ describe('Projects Component', () => {
     expect(projectCards).toHaveLength(4); // Ensure 4 projects are displayed per page
   });
 
+  test('renders images for each project on the page', () => {
+    const projectImages = screen.getAllByRole('img');
+    expect(projectImages).toHaveLength(4); // Ensure 4 images are displayed per page
+
+    projectImages.forEach((img) => {
+      expect(img).toHaveAttribute('src'); // Check that each image has a src attribute
+      expect(img).toHaveAttribute('alt', 'Project'); // Check that each image has an alt attribute
+    });
+  });
+
   test('displays pagination dots with correct active dot', () => {
     const totalPages = Math.ceil(20 / 4); // Adjust based on your actual total items
     const dots = screen.getAllByRole('button', { name: /Page/i }); // Use a regex to find buttons labeled "Page"
@@ -41,6 +51,9 @@ describe('Projects Component', () => {
     const updatedProjects = screen.getAllByRole('link');
     expect(updatedProjects).toHaveLength(4); // Still should be 4 projects on next page
 
+    const updatedImages = screen.getAllByRole('img');
+    expect(updatedImages).toHaveLength(4); // Ensure images are displayed for next page projects
+
     const dots = screen.getAllByRole('button', { name: /Page/i });
     const activeDot = dots.find(dot => dot.classList.contains('active'));
     expect(activeDot).not.toBeNull(); // Ensure there's an active dot after navigating
@@ -55,6 +68,9 @@ describe('Projects Component', () => {
 
     const updatedProjects = screen.getAllByRole('link');
     expect(updatedProjects).toHaveLength(4); // Should still be 4 projects
+
+    const updatedImages = screen.getAllByRole('img');
+    expect(updatedImages).toHaveLength(4); // Ensure images are displayed on the first page
 
     const firstDot = screen.getAllByRole('button', { name: /Page/i })[0];
     expect(firstDot.classList.contains('active')).toBe(true); // Ensure the first dot is active
