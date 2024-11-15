@@ -21,6 +21,9 @@
   text-align: center;
   padding: 20px;
 }
+.text-content h1 {
+  font-size:2rem;
+}
 
 .right-section {
   flex: 1;
@@ -45,6 +48,9 @@
     height: auto; /* Allow height to adjust for smaller screens */
     flex-direction: column; /* Stack sections vertically */
   }
+  .text-content h1 {
+    font-size:1.5rem;
+  }
 
   .left-section, .right-section {
     height: 50vh; /* Set a specific height for both sections */
@@ -64,6 +70,7 @@
   .diagonal-container {
     height: 50vh; /* Maintain the height */
   }
+  
 
   .centered-image {
     filter: blur(3px); /* Slightly adjust blur for tablet view */

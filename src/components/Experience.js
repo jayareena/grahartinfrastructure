@@ -52,7 +52,7 @@ const Experience = () => {
       </div>
 
       <div className="text-section">
-        <h1>10 Years Experience</h1>
+        <h2>10 Years Experience</h2>
         <p>Grahart Infrastructure, established in 2014, has been the trusted leader in delivering exceptional construction services across Punalur, Kerala. With a legacy of excellence and innovation, we transform visions into reality, building iconic structures that stand the test of time. Whether it's homes, commercial spaces, or infrastructure projects, we bring unmatched expertise and a commitment to quality that our clients rely on.</p> <Link to="/contact"> <button className="contact-button">Contact Us</button></Link> 
       </div>
     </div>

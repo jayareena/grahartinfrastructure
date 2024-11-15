@@ -85,7 +85,7 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/grahart_builders"  target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FontAwesomeIcon icon={faInstagram} /> Instagram
               </a>
             </p>

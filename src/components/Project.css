@@ -1,21 +1,12 @@
-/* Base Styles */
+/* Overall Container */
 .projectss-container {
-  padding: 40px;
-  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.projectss-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.projectss-container p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-
+/* Banner Section */
 .pro-container {
-  position: relative;
   width: 100%;
 }
 
@@ -25,7 +16,7 @@
   height: 500px;
 }
 
-.projectss-image {
+.slider-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -34,16 +25,36 @@
 .projectssoverlay-text-container {
   position: absolute;
   top: 50%;
-  right: 50px;
-  transform: translateY(-50%);
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
 }
 
 .projectssoverlay-text {
-  color: white;
-  font-size: 4rem;
-  font-weight: bold;
+  color: #264873;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 70%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 4rem; /* Adjust size for desktop */
+    z-index: 2;
+    font-weight: bold;
 }
 
+/* Introduction Section */
+h2 {
+  font-size: 2rem;
+  color: #264873;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px auto 30px;
+  max-width: 800px;
+}
+
+/* Projects Grid Section */
 .projectss-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -72,117 +83,43 @@
   object-fit: cover;
   border-bottom: 3px solid #264873;
 }
-
-.projectss-details {
-  padding: 10px;
-}
-
-.projectss-details h3 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.projectss-details p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.view-projectss-btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.view-projectss-btn:hover {
-  background-color: #0056b3;
-}
-
 /* Responsive Styles */
-
-/* Tablet Styles */
 @media (max-width: 768px) {
-  .projectss-container {
-      padding: 30px;
-  }
-
-  .projectss-container h2 {
-      font-size: 2rem; /* Slightly smaller heading */
-  }
-
-  .projectss-container p {
-      font-size: 1rem; /* Smaller paragraph text */
-  }
-
   .projectssoverlay-text {
-      font-size: 3rem; /* Adjust font size for tablet */
+    font-size: 2rem;
   }
 
-  .projectss-grid {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for tablet */
+  .projectss-image {
+    height: 200px;
   }
 
-  .projectss-card {
-      padding: 15px; /* Reduce padding */
+  h2 {
+    font-size: 1.8rem;
   }
 
-  .projectss-details h3 {
-      font-size: 1.3rem; /* Smaller heading for details */
-  }
-
-  .projectss-details p {
-      font-size: 0.9rem; /* Smaller paragraph text */
-  }
-
-  .view-projectss-btn {
-      padding: 8px 16px; /* Smaller button size */
+  p {
+    font-size: 0.9rem;
   }
 }
 
-/* Mobile Styles */
 @media (max-width: 480px) {
-  .projectss-container {
-      padding: 20px; /* Less padding for mobile */
-  }
-
-  .projectss-container h2 {
-      font-size: 1.5rem; /* Smaller heading */
-  }
-
-  .projectss-container p {
-      font-size: 0.9rem; /* Smaller paragraph text */
-  }
-
   .projectssoverlay-text {
-      font-size: 2.5rem; /* Smaller overlay text */
-      right: 20px; /* Adjust position */
+    font-size: 1.5rem;
   }
 
+  .projectss-image {
+    height: 200px;
+  }
   .projectssimage-container {
-      height: 300px; /* Smaller image height for mobile */
+    width: auto;
+    height: 300px;
   }
 
-  .projectss-grid {
-      grid-template-columns: 1fr; /* Single column for mobile */
+  h2 {
+    font-size: 1.5rem;
   }
 
-  .projectss-card {
-      padding: 10px; /* Smaller card padding */
-  }
-
-  .projectss-details h3 {
-      font-size: 1.2rem; /* Smaller heading for details */
-  }
-
-  .projectss-details p {
-      font-size: 0.8rem; /* Smaller paragraph text */
-  }
-
-  .view-projectss-btn {
-      padding: 6px 12px; /* Smaller button size */
+  p {
+    font-size: 0.9rem;
   }
 }

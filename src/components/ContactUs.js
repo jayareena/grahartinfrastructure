@@ -8,7 +8,7 @@ const ContactUs = () => {
     <div className="image-container-contactus">
       <img src={Contimg} alt="Slogan Background" className="background-image" />
       <div className="slogan-overlay-contactus">
-        <h2>Your trusted partner for the best service. </h2>
+        <h2>Your trusted partner for the best service </h2>
         <h4>Contact us to begin</h4>
         <div className="contactus-button">
         <Link to="/contact">

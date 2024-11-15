@@ -18,7 +18,7 @@ const Services = () => {
 
   return (
     <div data-testid="services-container">
-      <h2>Services</h2>
+     <center> <h2>Services</h2></center>
       <div className="services-grid">
         {servicesData.map((service) => {
           const isActive = activeService === service.id;

@@ -9,8 +9,8 @@
 
   /* About Image Container */
   .aboutoursimage-container {
-    width: 100%; /* Adjust for larger screens */
-    height: auto;
+    width: 100%;
+    height: 500px; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: contain;
@@ -24,9 +24,8 @@
     top: 50%; /* Center vertically */
     left: 70%; /* Center horizontally */
     transform: translate(-50%, -50%);
-    font-size: 3rem; /* Adjust size for desktop */
+    font-size: 4rem; /* Adjust size for desktop */
     z-index: 2;
-    font-family: 'Hr grotesk';
     text-align: center; /* Center text */
     font-weight: bold;
     max-width: 700px;
@@ -440,8 +439,8 @@
 
   /* About Image Container */
   .aboutoursimage-container {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     object-fit: cover; /* Ensure the image covers the container */
@@ -451,12 +450,11 @@
   .overlayabout-text {
     color: #264873;
     position: absolute;
-    top: 20%; /* Adjust position for mobile */
+    top: 35%; /* Adjust position for mobile */
     left: 70%; /* Centering */
     transform: translate(-50%, -50%);
-    font-size: 1.2rem; /* Smaller font size for mobile */
+    font-size: 1.3rem; /* Smaller font size for mobile */
     z-index: 2;
-    font-family: 'Hr grotesk';
     text-align: center; /* Center text */
     font-weight: bold;
     max-width: 90%; /* Limit the width on mobile */
@@ -509,11 +507,15 @@
     height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+  .corevalue-content{
+    margin:20px;
+  }
 
   /* Vision Section */
   .vision-content {
     flex-direction: column; /* Stack vision content vertically */
     align-items: center; /* Center items */
+    margin:20px;
   }
 
   .vision-text {
@@ -530,6 +532,7 @@
   .mission-content {
     flex-direction: column; /* Stack mission content vertically */
     align-items: center; /* Center items */
+    margin:20px;
   }
 
   .mission-text {

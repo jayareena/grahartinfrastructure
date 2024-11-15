@@ -4,6 +4,12 @@ import aboutImage1 from '../images/about.png';
 import visionImage from '../images/Ourvision.jpg'; // Image for 'Our Vision'
 import missionImage from '../images/Ourmission.jpg'; // Image for 'Our Mission'
 import coreImage from '../images/Corevalue.jpg';
+import safetyImage from '../images/Safety.png';
+import qualityImage from '../images/Quality.png';
+import integrityImage from '../images/Integrity.png';
+import innovationImage from '../images/Innovation.png';
+import collaborationImage from '../images/Collaboration.png';
+import sustainabilityImage from '../images/Sustainability.png';
 import ContactUs from './ContactUs'; // Image for 'Core Values'
 import Footer from './Footer';
 
@@ -12,32 +18,32 @@ const coreValues = [
   {
     title: 'Safety',
     description: 'Safety comes first. We provide a secure environment for everyone involved.',
-    image: '../images/Safety.png', // Update with the actual image path
+    image: safetyImage, // Update with the actual image path
   },
   {
     title: 'Quality',
     description: 'We deliver projects that stand the test of time and meet the highest standards.',
-    image: '../images/Quality.png', // Update with the actual image path
+    image: qualityImage, // Update with the actual image path
   },
   {
     title: 'Integrity',
     description: 'We operate with honesty and transparency in every project.',
-    image: '../images/Integrity.png', // Update with the actual image path
+    image: integrityImage, // Update with the actual image path
   },
   {
     title: 'Innovation',
     description: 'We embrace cutting-edge technology to ensure efficiency in our projects.',
-    image: '../images/Innovation.png', // Update with the actual image path
+    image: innovationImage, // Update with the actual image path
   },
   {
     title: 'Collaboration',
     description: 'Strong communication and teamwork are essential to our success.',
-    image: '../images/Collaboration.png', // Update with the actual image path
+    image: collaborationImage, // Update with the actual image path
   },
   {
     title: 'Sustainability',
     description: 'We implement eco-friendly practices to minimize environmental impact.',
-    image: '../images/Sustainability.png', // Update with the actual image path
+    image: sustainabilityImage, // Update with the actual image path
   },
 ];
 

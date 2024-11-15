@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css'; // Import the CSS file
 import contactImage from '../images/contactus.png';
-import sliderImage from '../images/contact.png'; // Example image for right section
+import sliderImage from '../images/contact.jpg'; // Example image for right section
 import Footer from './Footer';
 
 // Import FontAwesome icons

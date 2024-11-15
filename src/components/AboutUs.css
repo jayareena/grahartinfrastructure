@@ -36,7 +36,7 @@
 
 /* Title styles */
 .about-us-content h2 {
-    font-size: 2.25rem; /* Title font size */
+    font-size: 2rem; /* Title font size */
     color: #ffffff; 
     text-align: center; /* Title color */
     margin-bottom: 20px; /* Space below the title */
@@ -71,6 +71,9 @@
         flex-direction: column; /* Stacks the elements vertically */
         margin: 20px 0; /* Reduced margin for smaller screens */
     }
+    .about-us-content h2 {
+        font-size: 1.5rem; /* Smaller title font size for very small screens */
+    }
 
     .about-us-image img {
         width: 100%; /* Image takes full width on mobile */
@@ -78,7 +81,7 @@
 
     .about-us-content {
         position: static; /* Removes absolute positioning */
-        width: 100%; /* Content takes full width on mobile */
+        width: 90%; /* Content takes full width on mobile */
         margin-top: 20px;
         transform: none;
     }

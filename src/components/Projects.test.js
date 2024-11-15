@@ -1,9 +1,13 @@
-// projects.test.js
-
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Projects from './Projects';
+
+// Mock the image imports to prevent issues during testing
+jest.mock('../images/home1.jpg', () => 'mockImage1');
+jest.mock('../images/home2.jpg', () => 'mockImage2');
+jest.mock('../images/house3.jpg', () => 'mockImage3');
+jest.mock('../images/house4.jpg', () => 'mockImage4');
 
 const renderWithRouter = (ui, { route = '/' } = {}) => {
   window.history.pushState({}, 'Test page', route);
@@ -29,8 +33,8 @@ describe('Projects Component', () => {
     const projectImages = screen.getAllByRole('img');
     expect(projectImages).toHaveLength(4); // Ensure 4 images are displayed per page
 
-    projectImages.forEach((img) => {
-      expect(img).toHaveAttribute('src'); // Check that each image has a src attribute
+    projectImages.forEach((img, index) => {
+      expect(img).toHaveAttribute('src', `mockImage${index + 1}`); // Check that each image has the correct mocked src
       expect(img).toHaveAttribute('alt', 'Project'); // Check that each image has an alt attribute
     });
   });

@@ -1,7 +1,7 @@
 /* Services.css */
 .services-container {
   text-align: center;
-  padding: 30px;
+  padding: 50px 20px;
 }
 
 .services-container h2 {
@@ -9,6 +9,7 @@
   margin-bottom: 30px;
   font-weight: bold;
   color: #264873;
+  text-align: center;
 }
 
 /* Grid layout for services */
@@ -114,9 +115,11 @@
   .services-grid {
       grid-template-columns: 1fr; /* Single column on mobile view */
   }
+  .services-container h2 {
+    font-size: 1.5rem; }
 
   .service-card {
-      width: 100%; /* Full width for mobile */
+      width: 200px; /* Full width for mobile */
       height: auto;
       padding: 20px;
   }
