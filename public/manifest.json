@@ -1,25 +1,22 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+  "manifest_version": 2,
+  "name": "Grahart Infrastructure Extension",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "downloads"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo.png",
+    "128": "logo512.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
 }
