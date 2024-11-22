@@ -68,7 +68,7 @@
 
 .footer-bottom p {
   margin: 0;
-  font-size: 14px;
+  font-size: 1.5rem;
 }
 
 /* Make the footer responsive */
@@ -124,4 +124,69 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.footer-section h3 {
+  font-size: clamp(16px, 2vw, 18px); /* Dynamically scale heading size */
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: clamp(12px, 1.5vw, 14px); /* Dynamically scale paragraph size */
+  color: white;
+  margin: 0;
+}
+
+.footer-section p a,
+.footer-section p a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section p a:hover,
+.footer-section p a:focus,
+.footer-section p a:active {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+  justify-content: center;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #ffffff;
+  padding: 10px 0;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Stack sections vertically */
+    text-align: center;
+  }
+  .footer-section h3 {
+    font-size: 16px; /* Smaller heading size for mobile */
+  }
+  .footer-section p {
+    font-size: 12px; /* Smaller paragraph size for mobile */
+  }
 }

@@ -68,25 +68,24 @@ const About = () => {
       <div className="about-content1">
         <div className="about-text">
           <p>Grahart Infrastructure Private Limited specializes in the construction of homes and telecommunication infrastructure, offering comprehensive solutions tailored to meet the needs of both residential and telecom projects. We are committed to delivering high-quality construction services, combining our expertise in building homes with innovative telecom infrastructure development. Our approach is rooted in active engagement and clear communication with clients to ensure that every project is executed seamlessly, from planning to completion. By employing cutting-edge technology and a problem-solving mindset, we not only build structures but also long-lasting client partnerships, ensuring the delivery of reliable and future-ready solutions for homes and telecommunication networks.</p>
-        </div>
+     </div>
       </div>
 
 {/* Our Core Values Section */}
 <div className="corevalue-content">
-<div className="corevalue-text">
-  <h2>Our Core Values</h2>
-  <p>
-    At Grahart Infrastructure, we believe that our success is rooted in our core principles.
-    These values guide our actions and decision-making processes, ensuring we deliver exceptional
-    results in every project.
-  </p>
-  </div>
-  
   {/* Core Value Image on the same row */}
  <center> <div className="corevalue-image">
     <img src={coreImage} alt="Core Values" />
   </div></center>
 
+<div className="corevalue-text">
+ <center> <h2>Our Core Values</h2></center>
+  <p>
+  At Grahart Infrastructure, we believe that our success is rooted in our core principles. These values guide our actions and decision-making processes, ensuring we deliver exceptional results in every project. Integrity is at the heart of everything we do, fostering trust and transparency with our clients and partners. We are committed to innovation, constantly seeking smarter, more efficient solutions to meet evolving needs. Our dedication to sustainability drives us to create projects that respect the environment and uplift communities. Through teamwork, excellence, and a customer-first approach, we strive to build a future where our values shape every success.
+  </p>
+  </div>
+  
+  
   {/* Core Values Grid on the next line */}
   <div className="core-values-grid">
     {coreValues.map((value, index) => (
@@ -103,7 +102,7 @@ const About = () => {
       <div className="vision-content">
         <div className="vision-text">
           <h2>Our Vision</h2>
-          <p>To be the leading construction and infrastructure company, recognized for transforming ideas into sustainable realities.</p>
+          <p>Our vision is to be the leading construction and infrastructure company, recognized for transforming ideas into sustainable realities. We aim to redefine industry standards by delivering innovative, high-quality solutions that prioritize environmental stewardship and community well-being. Through our expertise and dedication, we aspire to build not just structures, but enduring trust and meaningful connections with clients and society. By shaping smarter and greener spaces, we strive to create a legacy of excellence that empowers future generations.</p>
         </div>
         <div className="vision-image">
           <img src={visionImage} alt="Our Vision" />
@@ -114,7 +113,7 @@ const About = () => {
       <div className="mission-content">
         <div className="mission-text">
           <h2>Our Mission</h2>
-          <p>Our mission is to provide exceptional construction services, delivering projects with excellence, on time, and within budget.</p>
+          <p>Our mission is to provide exceptional construction services, delivering projects with excellence, on time, and within budget. We are committed to maintaining the highest standards of quality, safety, and sustainability in every aspect of our work. By leveraging innovation and fostering strong partnerships, we aim to exceed client expectations and create lasting value. Our dedication lies in building not just structures, but also trust and positive impacts for communities and the environment.</p>
         </div>
         <div className="mission-image">
           <img src={missionImage} alt="Our Mission" />

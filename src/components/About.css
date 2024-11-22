@@ -5,6 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between; /* Adjust spacing */
+    overflow:-moz-hidden-unscrollable;
   }
 
   /* About Image Container */
@@ -21,7 +22,7 @@
   .overlayabout-text {
     color: #264873;
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 30%; /* Center vertically */
     left: 70%; /* Center horizontally */
     transform: translate(-50%, -50%);
     font-size: 4rem; /* Adjust size for desktop */
@@ -39,7 +40,6 @@
   }
 
   .about-header h1 {
-    font-size: 2.5rem; /* Larger font for desktop */
     margin: 40px;
     color: #264873;
   }
@@ -49,33 +49,23 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between; /* Space out content */
-    margin: 0 50px; /* Adjust margins */
-    margin-bottom: 60px;
+    margin: 30px;
   }
 
   .about-text {
-    flex: 2;
-    background-color: #264873;
-    padding: 20px; /* Add padding */
+    background-color: rgb(38, 72, 115);
+    padding: 20px;
+    width:100%;
+    
+    
   }
 
   .about-text p {
-    font-size: 18px; /* Font size for desktop */
     line-height: 1.6;
     color: white;
-    margin: 20px;
-  }
-
-  .about-image1 {
-    flex: 1;
-    width: 400px; /* Fixed width for larger screens */
-    height: auto;
-  }
-
-  .about-image1 img {
-    width: 100%;
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    width:100%;
+    margin: 10px 20px;
   }
 
   /* Vision Section */
@@ -87,6 +77,8 @@
 
   .vision-text {
     margin-left: 200px;
+    text-align: justify;
+    color: #777;
   }
 
   .vision-image img {
@@ -106,6 +98,8 @@
 
   .mission-text {
     margin-right: 200px;
+    text-align: justify;
+    color: #777;
   }
 
   .mission-image img {
@@ -113,10 +107,11 @@
     height: auto;
     margin-left: 200px;
   }
-  .corevalue-content {
-    
-    text-align: left;
-    margin: 0px 100px;
+  
+  .corevalue-text {
+    text-align: justify;
+    margin: 10px 20px;
+    color: #777;
   }
   .corevalue-image img {
     width: 300px; /* Fixed width for mission image */
@@ -127,14 +122,40 @@
   /* Core Values Section */
   .core-values-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
-    gap: 20px; /* Gap between cards */
+    grid-template-columns: repeat(3, 1fr);/* Responsive grid layout */
+    gap: 20px; /* Equal spacing between grid items */
+    justify-content: center; /* Centers grid items and adds spacing around */
+    padding: 20px; /* Adds padding inside the grid container */
+    margin: 20px auto; /* Centers the grid container horizontally on the page */
+    color: #777;
   }
-
-  .card {
-    max-width: 100%;
+  
+  .core-value {
+    text-align: center;
     padding: 20px;
   }
+  
+  .core-value img {
+    width:350px; /* Consistent icon size */
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  
+  .core-value h3 {
+    font-size: 1.5rem; /* Slightly larger heading */
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .core-value p {
+    color: #777;
+  }
+  
+  .core-value:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
 }
 /* Director Section */
 .director-container {
@@ -315,6 +336,10 @@
     width: 300px; /* Fixed width for tablet */
     height: auto;
   }
+  .corevalue-content{
+    margin:30px;
+
+  }
 
   /* Core Values Section */
   .core-values-grid {
@@ -354,7 +379,6 @@
     transform: translate(-50%, -50%);
     font-size: 1.8rem; /* Adjust size for tablet */
     z-index: 2;
-    font-family: 'Hr grotesk';
     text-align: left;
     font-weight: bold;
     max-width: 700px;
@@ -379,7 +403,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    text-align: left;
+    text-align: justify;
     margin: 0px 50px; /* Adjust margins for tablet */
     margin-bottom: 60px;
   }
@@ -415,16 +439,27 @@
   /* Vision Section */
   .vision-content {
     flex-direction: row; /* Maintain row layout */
-    justify-content: center;
+    text-align: justify;
     align-items: flex-start;
   }
 
   .vision-text {
     margin-left: 20px; /* Adjust margin */
   }
+  .mission-text{
+    text-align: justify;
+    margin:20px;
+  }
 
   .vision-image {
     margin-right: 20px;
+  }
+  .corevalue-text{
+    text-align: justify;
+    margin:20px;
+  }
+  .core-values-grid { 
+  grid-template-columns: repeat(2, 1fr);
   }
 }
 /* Mobile Styles (Max Width: 480px) */
@@ -494,21 +529,15 @@
     line-height: 1.4; /* Adjust line height */
     color: white;
     margin: 10px; /* Adjust margins */
-  }
-
-  .about-image1 {
-    width: 100%; /* Full width for mobile */
-    height: auto;
-    margin-top: 20px; /* Spacing between text and image */
-  }
-
-  .about-image1 img {
-    width: 100%; /* Full width on mobile */
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
   }
   .corevalue-content{
     margin:20px;
+    text-align: justify;
+  }
+  .corevalue-text{
+    margin-bottom: 20px;
+
   }
 
   /* Vision Section */
@@ -516,6 +545,7 @@
     flex-direction: column; /* Stack vision content vertically */
     align-items: center; /* Center items */
     margin:20px;
+    text-align: justify;
   }
 
   .vision-text {
@@ -533,6 +563,7 @@
     flex-direction: column; /* Stack mission content vertically */
     align-items: center; /* Center items */
     margin:20px;
+    text-align: justify;
   }
 
   .mission-text {
@@ -555,3 +586,5 @@
     padding: 10px; /* Reduced padding */
   }
 }
+
+  

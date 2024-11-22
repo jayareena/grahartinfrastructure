@@ -1,7 +1,6 @@
 /* Overall Container */
 .projectss-container {
   width: 100%;
-  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -41,23 +40,10 @@
     font-weight: bold;
 }
 
-/* Introduction Section */
-h2 {
-  font-size: 2rem;
-  color: #264873;
-  margin-top: 30px;
-}
-
-p {
-  font-size: 1rem;
-  margin: 10px auto 30px;
-  max-width: 800px;
-}
-
 /* Projects Grid Section */
 .projectss-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));;
   gap: 20px;
 }
 
@@ -92,14 +78,6 @@ p {
   .projectss-image {
     height: 200px;
   }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -113,13 +91,5 @@ p {
   .projectssimage-container {
     width: auto;
     height: 300px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 0.9rem;
   }
 }

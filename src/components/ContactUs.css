@@ -10,7 +10,7 @@
 
 .background-image {
   width: 100%;
-  height: 450px; 
+  height: 500px; 
   filter: blur(3px);/* This height can be adjusted for smaller screens */
   object-fit: cover; /* Ensure the image covers the area without distortion */
 }
@@ -26,20 +26,19 @@
 }
 
 /* Responsive Headings */
-.slogan-overlay-contactus h2 {
-  font-size: 2rem; /* Base font size */
+.slogan-overlay-contactus h2 { /* Base font size */
   margin: 0; /* Remove default margin */
 }
 
-.slogan-overlay-contactus h4 {
-  font-size: 1.2rem; /* Base font size */
+.slogan-overlay-contactus h4 { 
+  font-size:1.5rem;/* Base font size */
   margin: 10px 0; /* Add some margin for spacing */
   color:black;
 }
 
 /* Button Styles */
 .contactus-button {
-  margin-top: 20px; /* Add some space between the image/text and the button */
+  margin-top: 30px; /* Add some space between the image/text and the button */
   text-align: center;
 }
 
@@ -49,7 +48,7 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px; /* Base button font size */
+  font-size: 1rem; /* Base button font size */
   cursor: pointer;
   text-transform: uppercase;
   transition: background-color 0.3s ease;
@@ -61,13 +60,6 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .slogan-overlay-contactus {
-      font-size: 20px; /* Adjust font size for tablets */
-  }
-
-  h2 {
-      font-size: 22px; /* Adjust heading size for tablets */
-  }
 
   h4 {
       font-size: 16px; /* Adjust subheading size for tablets */
@@ -78,22 +70,13 @@
   }
 
   .btn-contact-us {
-      font-size: 14px; /* Smaller button font size */
       padding: 8px 16px; /* Adjust button padding */
   }
 }
 
 @media (max-width: 480px) {
-  .slogan-overlay-contactus {
-      font-size: 14px; /* Further adjust font size for mobile */
-  }
-
-  h2 {
-      font-size: 16px; /* Further adjust heading size for mobile */
-  }
-
   h4 {
-      font-size: 14px; /* Further adjust subheading size for mobile */
+      font-size: 16px; /* Further adjust subheading size for mobile */
   }
 
   .background-image {
@@ -101,7 +84,6 @@
   }
 
   .btn-contact-us {
-      font-size: 12px; /* Smaller button font size */
       padding: 6px 12px; /* Adjust button padding */
   }
 }

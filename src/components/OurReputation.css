@@ -5,17 +5,16 @@
 }
 
 .reputation-container h2 {
-  font-size: 2rem;
   margin-bottom: 30px;
   font-weight: bold;
-  color: #264873;
+  
 }
 
 /* Cards container */
 .reputation-cards {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -25,7 +24,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  max-width: 250px;
+  max-width: 300px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -38,7 +37,7 @@
 }
 
 .reputation-card .icon {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
   color: #6d9a30;
 }
@@ -50,8 +49,26 @@
 }
 
 .reputation-card p {
-  font-size: 0.9rem;
   color: #777;
+}
+@media (max-width: 768px) {
+  .reputation-cards {
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .reputation-card {
+    max-width: 200px;
+    padding: 15px;
+  }
+
+  .reputation-card .icon {
+    font-size: 1.8rem;
+  }
+
+  .reputation-card h3 {
+    font-size: 1.1rem;
+  }
 }
 
 /* Responsive Styles */
@@ -68,9 +85,6 @@
     padding: 15px;
   }
 
-  .reputation-container h2 {
-    font-size: 1.8rem;
-  }
 
   .reputation-card .icon {
     font-size: 1.8rem;
@@ -78,10 +92,6 @@
 
   .reputation-card h3 {
     font-size: 1.1rem;
-  }
-
-  .reputation-card p {
-    font-size: 0.85rem;
   }
 }
 
@@ -98,19 +108,11 @@
     padding: 10px;
   }
 
-  .reputation-container h2 {
-    font-size: 1.5rem;
-  }
-
   .reputation-card .icon {
     font-size: 1.5rem;
   }
 
   .reputation-card h3 {
     font-size: 1rem;
-  }
-
-  .reputation-card p {
-    font-size: 0.8rem;
   }
 }

@@ -3,11 +3,11 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <footer data-testid="footer-container">
+    <footer>
       <div className="footer-content">
         <div className="footer-section" data-testid="footer-section">
           <h3>Grahart Infrastructure</h3>
@@ -21,12 +21,12 @@ const Footer = () => {
 
         <div className="footer-section">
           <h3>Our Services</h3>
-          <Link to="/Service">
-            <p>
+          <p> <Link to="/Service">
+            
               Construction<br /><br />
               Telecom<br /><br />
-            </p>
-          </Link>
+            
+          </Link></p>
         </div>
 
         <div className="footer-section" >
@@ -75,11 +75,6 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <FontAwesomeIcon icon={faTwitter} /> Twitter
-              </a>
-            </p>
-            <p>
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
               </a>
@@ -94,7 +89,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Grahart Infrastructure Pvt Ltd. All rights reserved.</p>
+       <center> <p>&copy; 2024 Grahart Infrastructure Pvt Ltd. All rights reserved.</p></center>
       </div>
     </footer>
   );

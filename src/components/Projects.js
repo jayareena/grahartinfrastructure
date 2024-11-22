@@ -5,27 +5,27 @@ import hous1Image from '../images/home1.jpg';
 import hous2Image from '../images/home2.jpg';
 import hous3Image from '../images/house3.jpg';
 import hous4Image from '../images/house4.jpg';
+import hous5Image from '../images/h3.jpg';
+import hous6Image from '../images/h4.png';
+import hous7Image from '../images/h5.png';
+import hous8Image from '../images/h6.png';
+import hous9Image from '../images/home3.jpg';
+import hous10Image from '../images/home4.jpg';
+import hous11Image from '../images/house5.jpg';
+import hous12Image from '../images/house4.jpg';
 const projectData = [
   { description: "A luxurious hotel-inspired home featuring spacious living areas and eco-friendly materials.", imageUrl: hous1Image },
   { description: "An elegant family residence designed with modern aesthetics and functionality in mind.", imageUrl: hous2Image },
   { description: "A contemporary home with a sleek  and modern design perfect for modern families.", imageUrl:hous3Image },
   { description: "A stunning hillside home offering breathtaking views and  natural beauty with refined elegance and luxury finishes.", imageUrl: hous4Image },
-  { description: "A charming villa with Mediterranean influences and a beautiful garden.", imageUrl: hous1Image },
-  { description: "A modern high-rise with panoramic views and luxury amenities.", imageUrl: hous2Image },
-  { description: "A cozy retreat designed for relaxation in a tranquil setting.", imageUrl: hous3Image },
-  { description: "A beautiful home with large windows and outdoor entertainment areas.", imageUrl: hous4Image },
-  { description: "An artistic bungalow featuring unique architectural details and vibrant colors.", imageUrl:hous1Image },
-  { description: "A traditional farmhouse that combines rustic charm with modern comforts.", imageUrl:hous2Image },
-  { description: "A sleek urban townhouse designed for city living with efficiency and style.", imageUrl:hous3Image },
-  { description: "An expansive estate with luxurious features and beautiful landscaping.", imageUrl: hous4Image },
-  { description: "A minimalist home that emphasizes simplicity and open spaces.", imageUrl: hous1Image },
-  { description: "A coastal home with ocean views and outdoor living spaces.", imageUrl: hous2Image },
-  { description: "A modern cabin surrounded by nature, perfect for a peaceful getaway.", imageUrl: hous3Image },
-  { description: "A family-friendly home with a large backyard and play area.", imageUrl: hous4Image },
-  { description: "An eco-friendly home with sustainable materials and energy-efficient features.", imageUrl: hous1Image },
-  { description: "A stylish loft that combines modern design with comfort.", imageUrl: hous2Image },
-  { description: "A regal mansion with classic architecture and luxurious interiors.", imageUrl: hous3Image },
-  { description: "A vibrant and colorful home designed to inspire creativity.", imageUrl: hous4Image },
+  { description: "A charming villa with Mediterranean influences and a beautiful garden.", imageUrl: hous5Image },
+  { description: "A modern high-rise with panoramic views and luxury amenities.", imageUrl: hous6Image },
+  { description: "A cozy retreat designed for relaxation in a tranquil setting.", imageUrl: hous7Image },
+  { description: "A beautiful home with large windows and outdoor entertainment areas.", imageUrl: hous8Image },
+  { description: "An artistic bungalow featuring unique architectural details and vibrant colors.", imageUrl:hous9Image },
+  { description: "A traditional farmhouse that combines rustic charm with modern comforts.", imageUrl:hous10Image },
+  { description: "A sleek urban townhouse designed for city living with efficiency and style.", imageUrl:hous11Image },
+  { description: "An expansive estate with luxurious features and beautiful landscaping.", imageUrl: hous12Image }
 ];
 
 const Projects = () => {

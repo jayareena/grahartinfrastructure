@@ -21,10 +21,6 @@
   text-align: center;
   padding: 20px;
 }
-.text-content h1 {
-  font-size:2rem;
-}
-
 .right-section {
   flex: 1;
   position: relative;
@@ -47,9 +43,6 @@
   .diagonal-container {
     height: auto; /* Allow height to adjust for smaller screens */
     flex-direction: column; /* Stack sections vertically */
-  }
-  .text-content h1 {
-    font-size:1.5rem;
   }
 
   .left-section, .right-section {
@@ -79,6 +72,6 @@
 
 @media (min-width: 1025px) {
   .diagonal-container {
-    height: 50vh; /* Maintain the height for desktop */
+    height: 500px; /* Maintain the height for desktop */
   }
 }

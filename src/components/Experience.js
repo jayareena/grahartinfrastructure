@@ -15,7 +15,7 @@ const Experience = () => {
             <img src={expImg1} alt="Projects Completed Icon" className="stat-icon" />
             <div className="stat-text">
               <h2>123</h2>
-              <p>Projects Completed</p>
+              <h3>Projects Completed</h3>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Experience = () => {
             <img src={expImg2} alt="Happy Clients Icon" className="stat-icon" />
             <div className="stat-text">
               <h2>84</h2>
-              <p>Happy Clients</p>
+              <h3>Happy Clients</h3>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const Experience = () => {
             <img src={expImg3} alt="Awards Win Icon" className="stat-icon" />
             <div className="stat-text">
               <h2>3</h2>
-              <p>Awards Win</p>
+              <h3>Awards Win</h3>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Experience = () => {
             <img src={expImg4} alt="Years in Business Icon" className="stat-icon" />
             <div className="stat-text">
               <h2>10</h2>
-              <p>Years in Business</p>
+              <h3>Years in Business</h3>
             </div>
           </div>
         </div>
@@ -53,8 +53,13 @@ const Experience = () => {
 
       <div className="text-section">
         <h2>10 Years Experience</h2>
-        <p>Grahart Infrastructure, established in 2014, has been the trusted leader in delivering exceptional construction services across Punalur, Kerala. With a legacy of excellence and innovation, we transform visions into reality, building iconic structures that stand the test of time. Whether it's homes, commercial spaces, or infrastructure projects, we bring unmatched expertise and a commitment to quality that our clients rely on.</p> <Link to="/contact"> <button className="contact-button">Contact Us</button></Link> 
-      </div>
+        <p>Established in 2014, Grahart Infrastructure Pvt. Ltd. has emerged as a trusted leader in delivering exceptional construction and infrastructure services across Punalur, Kerala. Over the years, we have built a reputation for excellence, innovation, and reliability, earning the confidence of countless clients and communities we serve.
+
+        </p><p>Our mission is to transform visions into reality by crafting iconic structures that stand the test of time. From beautiful homes that provide comfort and security to commercial spaces that fuel business growth, and infrastructure projects that connect communities, we ensure every endeavor reflects our commitment to quality and meticulous attention to detail.
+
+</p><p>With a legacy of over a decade in the industry, we bring unmatched expertise to every project. Our dedicated team leverages cutting-edge technologies, sustainable practices, and industry best standards to deliver projects that not only meet expectations but consistently exceed them.
+</p><p>
+We believe that construction is more than just building structures—it’s about creating meaningful spaces that inspire, empower, and endure. At Grahart Infrastructure, we take pride in being a partner of choice for those seeking reliability, innovation, and excellence in construction.</p><br></br><Link to="/contact"> <button className="contact-button">Contact Us</button></Link> </div>
     </div>
   );
 };

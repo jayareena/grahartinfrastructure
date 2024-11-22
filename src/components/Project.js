@@ -57,10 +57,10 @@ const Project = () => {
           </div>
         </div>
       </div>
-      {/* Introduction */}
+      {/* Introduction */}<br></br>
       <center><h2>Our Projects</h2></center>
       <center><p>Take a look at some of our most prominent construction projects that demonstrate our dedication to quality and innovation.</p></center>
-      
+      <br></br><br></br>
       {/* Project Images */}
       <div className="projectss-grid">
         {projectImages.map((project, index) => (

@@ -5,7 +5,6 @@
 }
 
 .projects-heading {
-    font-size: 32px;
     color: #264873;
     margin-bottom: 40px;
 }
@@ -37,7 +36,7 @@
 
 .project-image img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
@@ -48,23 +47,15 @@
     color: white;
 }
 
-.project-info h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    font-size: 14px;
-}
-
 .carousel-controls {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 400px;
     margin: 20px auto;
 }
 
 .carousel-btn {
+    margin-top:30px;
     background-color: #264873;
     color: white;
     padding: 10px 20px;
@@ -85,8 +76,8 @@
 }
 
 .dot {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     margin: 0 5px;
     background-color: #ccc;
     border-radius: 50%;
@@ -100,16 +91,8 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .projects-heading {
-        font-size: 28px; /* Adjust heading size */
+     /* Adjust heading size */
         margin-bottom: 30px; /* Adjust margin */
-    }
-
-    .project-info h3 {
-        font-size: 16px; /* Adjust project title size */
-    }
-
-    .project-info p {
-        font-size: 16px; /* Adjust project description size */
     }
 
     .carousel-controls {
@@ -120,8 +103,7 @@
 }
 
 @media (max-width: 480px) {
-    .projects-heading {
-        font-size: 24px; /* Further adjust heading size */
+    .projects-heading { /* Further adjust heading size */
         margin-bottom: 20px; /* Adjust margin */
     }
 

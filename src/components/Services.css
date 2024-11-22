@@ -1,11 +1,13 @@
-/* Services.css */
+/* General container styling */
 .services-container {
   text-align: center;
-  padding: 50px 20px;
+  margin-top:30px;
+  padding: 20px;
+  max-width: 1200px; /* Limits the width for large screens */
 }
 
+/* Section title styling */
 .services-container h2 {
-  font-size: 2rem;
   margin-bottom: 30px;
   font-weight: bold;
   color: #264873;
@@ -15,22 +17,25 @@
 /* Grid layout for services */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px; /* Adds space between the cards */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adapts column width responsively */
+  gap: 10px !important; 
   justify-items: center;
+  margin-top:15px;
   width: 100%;
 }
 
+/* Individual service card */
 .service-card {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 30px;
-  width: 200px;
-  height: 100px;
+  padding: 20px;
+  max-height: 300px;
+  width:400px; /* Limits card width */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Overlay icon styling */
@@ -41,20 +46,20 @@
 
 .icon-overlay .fa {
   font-size: 2rem;
-  margin-bottom: 15px; /* Resizing the icon */
+  margin-bottom: 15px; /* Space below the icon */
   color: black; /* Default icon color */
 }
 
 .icon-overlay::before {
   content: '';
   position: absolute;
-  left: -10px; /* Offset to the left for the overlay effect */
-  width: 25px;  /* Square width */
-  height: 25px; /* Square height */
-  background-color: #6d9a30; /* Green overlay square */
+  left: -10px; /* Offset to the left */
+  width: 25px;
+  height: 25px;
+  background-color: #6d9a30; /* Green square overlay */
   top: 50%;
   transform: translateY(-50%);
-  z-index: -1; /* Keeps it behind the icon */
+  z-index: -1;
 }
 
 /* Line below the icon */
@@ -65,62 +70,68 @@
   margin: 10px auto;
 }
 
-/* Heading styles */
+/* Heading inside card */
 .service-card h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #333;
   margin: 0;
 }
 
-/* Hover and active states */
+/* Hover and active effects */
 .service-card:hover,
 .service-card.active {
   background-color: #003366; /* Dark blue on hover or active */
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-card.active .icon-overlay .fa,
 .service-card:hover .icon-overlay .fa {
-  color: white; /* Icon turns white on hover or when clicked */
+  color: white; /* Changes icon color */
 }
 
 .service-card.active h3,
 .service-card:hover h3 {
-  color: white; /* Heading turns white on hover or when clicked */
+  color: white; /* Changes heading color */
 }
 
 .service-card.active .line,
 .service-card:hover .line {
-  background-color: white; /* Line turns white on hover or when clicked */
+  background-color: white; /* Changes line color */
 }
 
-/* Responsive Design */
+/* Responsive Design Adjustments */
 /* For Tablets */
 @media (max-width: 1024px) {
+
   .services-grid {
-      grid-template-columns: 1fr 1fr; /* Two columns on tablet view */
-      gap: 20px; /* Adjust gap for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts for smaller screens */
+    gap: 20px;
   }
 
   .service-card {
-      width: 100%;
-      height: auto; /* Allow height to adjust dynamically */
-      padding: 20px;
+   
+    padding: 20px;
+    margin-bottom:30px;
+  }
+  .service-card h3 {
+    font-size: 1.2rem;
   }
 }
 
 /* For Mobile Devices */
 @media (max-width: 768px) {
+
   .services-grid {
-      grid-template-columns: 1fr; /* Single column on mobile view */
+    grid-template-columns: 1fr; /* Single-column layout */
   }
-  .services-container h2 {
-    font-size: 1.5rem; }
 
   .service-card {
-      width: 200px; /* Full width for mobile */
-      height: auto;
-      padding: 20px;
+    width: 200px;
+    padding: 15px;
+    margin:20px;
+  }
+  .service-card h3 {
+    font-size: 1rem;
   }
 }

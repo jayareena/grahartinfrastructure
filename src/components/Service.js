@@ -36,7 +36,7 @@ const Service = () => {
         <div className="intro-content">
           <h2>Our Best Services</h2>
           <p> We provide comprehensive construction and telecom services designed to meet the highest industry standards. From residential and commercial construction projects to advanced telecom infrastructure solutions, we ensure quality, reliability, and innovation in every endeavor. Our team is dedicated to delivering tailored solutions that exceed client expectations while maintaining a commitment to safety and sustainability. Trust us to bring your vision to life with excellence and precision.</p>
-          <Link to="/about">       <button className="intro-btn">Know More</button></Link>
+      <br></br>    <Link to="/about">       <button className="intro-btn">Know More</button></Link>
         </div>
       </div>
 
@@ -67,13 +67,11 @@ const Service = () => {
     <h2>Construction</h2>
     <h3>Planning & Design</h3>
     <p>We start every project with detailed planning and innovative design. Our team works closely with you to understand your vision and develop a blueprint that aligns with your goals, while ensuring structural integrity and compliance with regulations.</p>
-  </div>
-
-  
+ 
     <h3>Project Estimation</h3>
     <p>Understanding the costs of a construction project is crucial. We provide accurate and transparent cost estimations, giving you a clear picture of your financial investment from the start. Our estimates cover materials, labor, and timeline, with no hidden fees.</p>
     <img src={serviceImage4} alt="Construction Site" className="image-left" />
-  
+    
   <div className="content-below">
     <h3>Building Permits & Approvals</h3>
     <p>Navigating legal requirements can be overwhelming. We handle all the necessary building permits and approvals for your project, ensuring everything is in line with local laws and safety regulations so you can focus on your vision.</p>
@@ -84,6 +82,7 @@ const Service = () => {
     <h3>Project Management</h3>
     <p>We offer full-service project management to keep your project on track and within budget. Our managers work closely with architects, engineers, and construction crews to ensure all phases of the project run smoothly.</p>
   </div>
+</div>
 </div>
 
       {/* 2 Row Images */}

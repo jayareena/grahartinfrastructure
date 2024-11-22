@@ -6,15 +6,9 @@ import abtImg from '../images/aboutus.png'; // Ensure the path is correct
 const AboutUs = () => {
     return (
         <div className="full-width-section">
-            <h2 style={{
-                fontSize: '2rem',
-                marginTop: '50px',
-                fontWeight: 'bold',
-                textAlign: 'center',
-                color: '#264873'
-            }}>
-                About Us
-            </h2>
+          <center>  
+          <h2>About Us
+            </h2></center>
             <div className="about-us-container">
                 <Link to="/About"> {/* Make the image a link to the About page */}
                     <div className="about-us-image">
