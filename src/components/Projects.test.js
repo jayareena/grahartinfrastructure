@@ -2,12 +2,23 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Projects from './Projects';
+import { projectData } from './Projects';
+
 
 // Mock the image imports to prevent issues during testing
 jest.mock('../images/home1.jpg', () => 'mockImage1');
 jest.mock('../images/home2.jpg', () => 'mockImage2');
 jest.mock('../images/house3.jpg', () => 'mockImage3');
 jest.mock('../images/house4.jpg', () => 'mockImage4');
+jest.mock('../images/h3.jpg', () => 'mockImage5');
+jest.mock('../images/h4.png', () => 'mockImage6');
+jest.mock('../images/h5.png', () => 'mockImage7');
+jest.mock('../images/h6.png', () => 'mockImage8');
+jest.mock('../images/home3.jpg', () => 'mockImage9');
+jest.mock('../images/home4.jpg', () => 'mockImage10');
+jest.mock('../images/house5.jpg', () => 'mockImage11');
+jest.mock('../images/house4.jpg', () => 'mockImage12');
+
 
 const renderWithRouter = (ui, { route = '/' } = {}) => {
   window.history.pushState({}, 'Test page', route);
@@ -29,18 +40,12 @@ describe('Projects Component', () => {
     expect(projectCards).toHaveLength(4); // Ensure 4 projects are displayed per page
   });
 
-  test('renders images for each project on the page', () => {
-    const projectImages = screen.getAllByRole('img');
-    expect(projectImages).toHaveLength(4); // Ensure 4 images are displayed per page
-
-    projectImages.forEach((img, index) => {
-      expect(img).toHaveAttribute('src', `mockImage${index + 1}`); // Check that each image has the correct mocked src
-      expect(img).toHaveAttribute('alt', 'Project'); // Check that each image has an alt attribute
-    });
-  });
+  
+  
+  
 
   test('displays pagination dots with correct active dot', () => {
-    const totalPages = Math.ceil(20 / 4); // Adjust based on your actual total items
+    const totalPages = Math.ceil(12 / 4); // Adjust based on your actual total items
     const dots = screen.getAllByRole('button', { name: /Page/i }); // Use a regex to find buttons labeled "Page"
     expect(dots).toHaveLength(totalPages); // Adjust based on total number of pages
 

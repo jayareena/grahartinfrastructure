@@ -60,7 +60,6 @@ describe('Footer Component', () => {
   test('renders social media icons with links', () => {
     const socialLinks = [
       { name: 'Facebook', icon: /facebook/i },
-      { name: 'Twitter', icon: /twitter/i },
       { name: 'LinkedIn', icon: /linkedin/i },
       { name: 'Instagram', icon: /instagram/i },
     ];

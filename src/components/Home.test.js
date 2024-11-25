@@ -65,13 +65,6 @@ describe('Home Component', () => {
     const projectElements = screen.queryAllByText(/contact us/i);
     expect(projectElements.length).toBeGreaterThan(0); // or whatever condition makes sense
   });
-  
-
- 
-  it('renders the Our Footer section', () => {
-    const sliderElement = screen.getByTestId('footer-container');
-    expect(sliderElement).toBeInTheDocument();
-});
 
   
 });

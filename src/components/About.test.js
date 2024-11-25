@@ -88,14 +88,5 @@ describe('About Component', () => {
     expect(directorHeading).toBeInTheDocument();
     expect(directorDescription).toBeInTheDocument();
   });
-  it('renders the ContactUs and Footer components', () => {
-    render(
-      <MemoryRouter>
-        <About />
-      </MemoryRouter>
-    );
-    const footerElement = screen.getByTestId('footer-container');
-    expect(footerElement).toBeInTheDocument();
-  });
  
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Service from './components/Service';
@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-      <Router basename="/grahart-infrastructure">
+      <Router basename="/grahartinfrastructure">
       <Header />
       <div className="main-content">
         <Routes>
