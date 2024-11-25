@@ -40,7 +40,16 @@ describe('Projects Component', () => {
     expect(projectCards).toHaveLength(4); // Ensure 4 projects are displayed per page
   });
 
-  
+  test('renders images for each project on the page', () => {
+    console.log(projectData);
+    const currentProjects = projectData.slice(0, 4); // Get the projects displayed on the first page
+    const projectImages = screen.getAllByRole('img');
+    expect(projectImages).toHaveLength(4); // Ensure 4 images are displayed per page
+    currentProjects.forEach((project, index) => {
+      expect(projectImages[index]).toHaveAttribute('src', project.imageUrl);
+      expect(projectImages[index]).toHaveAttribute('alt', 'Project');
+    });
+  });
   
   
 

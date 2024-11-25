@@ -13,7 +13,7 @@ import hous9Image from '../images/home3.jpg';
 import hous10Image from '../images/home4.jpg';
 import hous11Image from '../images/house5.jpg';
 import hous12Image from '../images/house4.jpg';
-const projectData = [
+export const projectData = [
   { description: "A luxurious hotel-inspired home featuring spacious living areas and eco-friendly materials.", imageUrl: hous1Image },
   { description: "An elegant family residence designed with modern aesthetics and functionality in mind.", imageUrl: hous2Image },
   { description: "A contemporary home with a sleek  and modern design perfect for modern families.", imageUrl:hous3Image },
